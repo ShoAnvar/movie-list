@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Netflix | Landing Page UI Design</title>
+	<link rel="stylesheet" type="text/css" href="javada katta uy iwi.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+	<header>
+		<a href="***" class="logo"><i class='fab fa-asymmetrik' id="img" style='font-size:55px;color:red'></i></a>
+		<ul class="navigation">
+			<li><a href="***">Home</a></li>
+			<li><a href="***">TV Shows</a></li>
+			<li><a href="***">Movie</a></li>
+			<li><a href="***">Latest</a></li>
+			<li><a href="***">My list</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="search" name="">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+		
+	</header>
+	<div class="banner">
+		<img src="bg.jpg" class="bg">
+		<div class="contant">
+			<img src="logo.png" class="contant" id="movieTitle">
+			<h4>
+				<span>2020</span>
+				<span><i>12+</i></span>
+				<span>1h 20min</span>
+				<span>Action</span>
+			</h4>			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+			<div class="buttons">
+				<a href="***"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+				<a href="***"><i class="fa fa-plus" aria-hidden="true"></i>List play</a>
+			</div>
+		</div>
+		<a class="play" onclick="toggleVideo();" ><i class='far fa-play-circle' style='font-size:40px;color:red'></i>&nbsp;&nbsp;Watch trailer</a>
+	</div>
+
+	<div class="trailer">
+		<video src="https://trailers-kinonews.ru/trailers/trailer25980.mp4" controls="true"></video>
+		<img src="close.png" class="close" onclick="toggleVideo();">
+	</div>
+
+	<script>
+		function toggleVideo(){
+			const trailer = document.querySelector('.trailer');
+			const video = document.querySelector('video');
+			trailer.classList.toggle('active')
+			video.currentTime = 0;
+			video.pause();
+		}
+	</script>
+
+</body>
+</html>
